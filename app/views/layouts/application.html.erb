@@ -28,11 +28,26 @@
         <%= link_to 'About', '#' %> 
       </div> 
     </header>
-
+    <hr />
     <br class="clear" />
 
-    <hr />
+    <div class="container">
+      <%= yield %>
+    </div>
 
-    <%= yield %>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough. I need more.", "#", class: 'next-quote' %>
+          </div>
+          <div class="footer-blurb">
+            Made by <a href="geoffreywaterhouse.getforge.io">Geoffrey Waterhouse.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
   </body>
 </html>
